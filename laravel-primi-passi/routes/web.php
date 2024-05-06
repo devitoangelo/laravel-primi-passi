@@ -22,19 +22,22 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('home', function () {
+Route::get('/home', function () {
 
-$data = [
+    $data = [
 
-    'name'=> 'angelo',
-    'lastname'=> 'devito',
-] ;
+        'name' => 'angelo',
+        'lastname' => 'devito',
+    ];
 
     return view('home', $data);
 });
 
 
 
-Route::get('about', function () {
-    return view('about');
+Route::get('/about', function () {
+
+    $name = 'angelo';
+
+    return view('about', compact('name'));
 });
