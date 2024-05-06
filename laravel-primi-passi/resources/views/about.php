@@ -15,9 +15,8 @@
     </head>
     <body class="antialiased">
 
-    <h1> Hello World</h1>
-    <h2>{{$name}}</h2>
-    <h2>{{$lastname}}</h2>
+    <h1> Pagina About</h1>
+
 
 
     </body>
